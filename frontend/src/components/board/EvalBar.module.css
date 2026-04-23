@@ -1,0 +1,45 @@
+.evalBar {
+  width: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.blackSection {
+  background-color: #3d3d3d;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4px 0;
+  transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 0;
+}
+
+.whiteSection {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4px 0;
+  transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 0;
+}
+
+.evalText {
+  font-size: 10px;
+  font-weight: 800;
+  writing-mode: horizontal-tb;
+  line-height: 1;
+}
+
+.blackSection .evalText {
+  color: #e0e0e0;
+}
+
+.whiteSection .evalText {
+  color: #1a1a1a;
+}

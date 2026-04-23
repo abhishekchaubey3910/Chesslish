@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Background — unified deep charcoal inspired by Seeing Theory */
+  --bg-primary: #27252c;
+  --bg-secondary: #1f1d23;
+  --bg-panel: #1a1820;
+  --bg-hover: #33313a;
+  --bg-active: #3d3b44;
+  --bg-input: #19171e;
+
+  /* Board */
+  --board-light: #eeeed2;
+  --board-dark: #769656;
+  --board-highlight-light: #f6f669;
+  --board-highlight-dark: #baca2b;
+
+  /* Text */
+  --text-primary: #e8e8e8;
+  --text-secondary: #a0a0a0;
+  --text-muted: #6e6e6e;
+  --text-move-number: #888888;
+
+  /* Move classifications */
+  --brilliant: #26c2a3;
+  --great: #5c8bb0;
+  --best: #9bc700;
+  --good: #96bc4b;
+  --inaccuracy: #f7c631;
+  --mistake: #e58f2a;
+  --blunder: #ca3431;
+  --book: #a88865;
+
+  /* Eval bar */
+  --eval-white: #ffffff;
+  --eval-black: #1a1a1a;
+
+  /* Accent */
+  --accent: #81b64c;
+  --accent-hover: #6fa03e;
+
+  /* Borders */
+  --border: #35333c;
+  --border-light: #45434e;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+
+  /* Sizing */
+  --header-height: 56px;
+  --border-radius: 6px;
+  --border-radius-lg: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

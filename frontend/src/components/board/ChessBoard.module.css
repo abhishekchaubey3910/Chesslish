@@ -1,0 +1,8 @@
+.boardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--board-size, 560px);
+  height: var(--board-size, 560px);
+}

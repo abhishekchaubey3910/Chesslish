@@ -1,0 +1,61 @@
+.moveList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px;
+}
+
+.moveRow {
+  display: grid;
+  grid-template-columns: 36px 1fr 1fr;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.moveNumber {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  user-select: none;
+}
+
+.moveBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  min-height: 30px;
+}
+
+.moveBtn:hover {
+  background-color: var(--bg-hover);
+}
+
+.moveBtn.active {
+  border: 1px solid;
+}
+
+.san {
+  font-family: 'Inter', monospace;
+  font-weight: 600;
+}
+
+.emptyMove {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}

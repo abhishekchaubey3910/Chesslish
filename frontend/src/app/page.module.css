@@ -1,0 +1,154 @@
+.landing {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #27252c; /* Seeing theory dark background */
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  height: 70px;
+  background: rgba(39, 37, 44, 0.8);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  gap: 32px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  font-size: 24px;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  padding: 8px 0px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ccc;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #fff;
+}
+
+/* Content Layout */
+.contentContainer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  pointer-events: none; /* Let clicks pass to canvas if needed, except buttons */
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+  pointer-events: auto;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  color: #e0e0e0;
+  pointer-events: auto;
+}
+
+.ctaButton {
+  padding: 14px 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  border-radius: 30px; /* Highly rounded like Seeing Theory */
+  pointer-events: auto;
+}
+
+.ctaButton:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+/* About Section */
+.aboutSection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
+  width: 100%;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.aboutContent {
+  max-width: 800px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #ccc;
+  text-align: left;
+}
+
+.aboutContent p {
+  margin-bottom: 1.5rem;
+}
+
+.aboutContent strong {
+  color: #fff;
+  font-weight: 700;
+}

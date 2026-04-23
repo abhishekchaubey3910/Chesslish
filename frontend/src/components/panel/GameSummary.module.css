@@ -1,0 +1,96 @@
+.summaryContainer {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #302e2b; /* Match chess.com dark theme */
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+/* Top Accuracy Section */
+.accuracySection {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.accuracyBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 8px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.boxWhite {
+  background-color: #fff;
+  color: #302e2b;
+  border: 2px solid #fff;
+}
+
+.boxBlack {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.accuracyValue {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.accuracyLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.resultMiddle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #999;
+}
+
+/* Classification List Section */
+.classificationList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.classRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.count {
+  width: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.classMiddle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.classLabel {
+  font-size: 15px;
+  font-weight: 600;
+}

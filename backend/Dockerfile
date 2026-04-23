@@ -19,8 +19,11 @@ COPY --from=build /app/target/*.jar app.jar
 # Set environment variable for Stockfish path
 ENV STOCKFISH_PATH=/usr/games/stockfish
 
+# Set memory limits to fit within Render's 512MB free tier
+ENV JAVA_OPTS="-Xmx256m -Xms128m"
+
 # Expose port
 EXPOSE 8080
 
 # Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
